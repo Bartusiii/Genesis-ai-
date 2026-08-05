@@ -12,3 +12,31 @@
 <button onclick="leren()">Leer</button>
 
 <script src="app.js"></script>
+<input
+    type="text"
+    id="command"
+    placeholder="Typ een opdracht..."
+>
+
+<button onclick="voerCommandUit()">
+    Uitvoeren
+</button>
+function voerCommandUit() {
+    const cmd = document
+        .getElementById("command")
+        .value
+        .trim()
+        .toLowerCase();
+
+    if (cmd.includes("werk")) {
+        werken();
+    } else if (cmd.includes("eet")) {
+        eten();
+    } else if (cmd.includes("rust")) {
+        rusten();
+    } else if (cmd.includes("leer")) {
+        leren();
+    } else {
+        alert("Onbekende opdracht.");
+    }
+}

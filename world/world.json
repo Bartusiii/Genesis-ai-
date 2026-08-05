@@ -1,0 +1,8 @@
+{
+  "name": "Genesis",
+  "energy": 100,
+  "hunger": 20,
+  "money": 0,
+  "job": "none",
+  "skills": []
+}
